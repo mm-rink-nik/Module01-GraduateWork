@@ -479,14 +479,12 @@ a:hover {
 .email-title {
     font-weight: 700;
     font-size: 40px;
-    margin-left: 74px;
     margin-bottom: 0;
     margin-top: 0;
     padding: 0;
     text-align: center;
 }
 .email-input {
-    margin-left: 74px;
     margin-bottom: 0;
     margin-top: 40px;
     text-align: center;
@@ -521,7 +519,7 @@ a:hover {
     font-size: 11px;
     line-height: 150%;
     margin-top: 14px;
-    margin-right: 206px;
+    margin-right: 305px;
 }
 
 /* about company     padding: 20px 28px; */
@@ -633,3 +631,132 @@ a:hover {
 .mobile-hidden {
     display: none;
 }
+
+/* Footer */
+
+.container-footer {
+    margin: 0 auto;
+    max-width: 1245px;;
+}
+footer {
+    position: relative;
+    margin: 0;
+    background-color: #F3F3F3; 
+    padding-top: 33px;
+    padding-bottom: 21px;
+    z-index: 0;
+    margin-top: 93px;
+    color: #2B3541;
+}
+.footer-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 13px;
+}
+.footer-nav-flex {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between;
+    gap: 40px;
+    padding-left: 0;
+    flex-basis: 69%;
+}
+.footer-ankor {
+    font-size: 14px;
+    line-height: 150%;
+    text-decoration: none;
+    color: #2B3541; 
+}
+.footer-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-basis: 56%;
+    gap: 39px;
+}
+.footer-social {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between;
+    padding-left: 0;
+    gap: 30px;
+}
+.footer-contacts-a {    
+    color: #2B3541;
+    display: block;
+    position: relative;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+    margin: 0;
+}
+.footer-contacts-a::before {    
+    content: " ";
+    position: absolute;
+    top: -9px;
+    left: -13px;    
+    background-color: #FBF138;  
+    box-shadow: 0px 13px 24px rgba(251, 241, 56, 0.3);
+    border-radius: 100%;
+    height: 25px;
+    width: 25px;    
+    cursor: pointer;
+    z-index: -1;
+    transition: all 0.2s;
+}
+.footer-social-fb {
+    display: block;
+    background-image: url(../img/FB.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 28px;
+    height: 28px;
+    transition: all 0.2s;
+}
+.footer-social-fb:hover {
+    transform: scale(1.2666);
+}
+.footer-social-in {
+    display: block;
+    background-image: url(../img/IN.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 28px;
+    height: 28px;
+}
+.footer-social-in:hover {
+    transform: scale(1.2666);
+}
+.footer-copyright {
+    display: flex;    
+    justify-content: space-between;
+    font-size: 14px;
+    line-height: 150%;
+    color: rgba(43, 53, 65, 0.5);
+}
+.footer-copyright p {
+    padding-top: 0;
+    margin-top: 0;
+}
+.footer-contacts {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 61px;
+}
+.footer-contacts-email {
+    padding: 10px 0;
+    align-items: center;
+}
+.footer-frontend-blok
+.frontend-blok {
+    text-decoration: underline;
+    color: rgba(43, 53, 65, 0.5);
+    transition: all 0.2s;
+}
+.frontend-blok:hover {
+    color: rgba(43, 53, 65, 1);
+}
+
