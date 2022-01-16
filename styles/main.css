@@ -236,7 +236,7 @@ a:hover {
 }
 .menu-grid-img-1 {
     position: absolute;
-    background-image: url(../img/grid1/Marapfone.jpg);
+    background-image: url(../img/grid1/n1.jpg);
     background-repeat: no-repeat;
     display: block;
     background-size: cover;
@@ -247,7 +247,7 @@ a:hover {
 }
 .menu-grid-img-2 {
     position: absolute;
-    background-image: url(../img/grid1/Vebinar.jpg);
+    background-image: url(../img/grid1/n2.jpg);
     background-repeat: no-repeat;
     display: block;
     background-size: cover;
@@ -258,7 +258,7 @@ a:hover {
 }
 .menu-grid-img-3 {
     position: absolute;
-    background-image: url(../img/grid1/Vebinar2.jpg);
+    background-image: url(../img/grid1/n3.jpg);
     background-repeat: no-repeat;
     display: block;
     background-size: cover;
@@ -664,6 +664,7 @@ a:hover {
     font-size: 16px;
     line-height: 150%;
     letter-spacing: 0.03em;
+    transition: 0.2s;
     text-transform: uppercase;
     text-decoration: none;
     cursor: pointer;
