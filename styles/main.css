@@ -11,7 +11,21 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    flex-basis: 63%;
+    flex-basis: 47%;
+}
+.nav-item > ul > li > a:after {
+    display: block;
+    content: "";
+    right: 0;
+    width: 0;
+    margin-top: 10px;
+    height: 1px;
+    background-color: #2B3541;
+    transition: width 0.2s ease-out;
+}
+.nav-item > ul > li > a:hover:after,
+.nav-item  > ul > li > a:focus:after {
+	width: 100%;
 }
 .header {
     display: flex;
@@ -33,13 +47,17 @@ body {
     list-style-type: none;
     gap: 54px;
     justify-content: space-between;
-} 
+}
 .header-nav a {
     text-decoration: none;
+	list-style-type: none;    
     font-weight: normal;
     font-size: 18px;
     line-height: 150%;
     color: #2B3541;
+}
+.header-nav a:hover {
+    text-decoration: none;
 }
 .header-nav a::after {
     content: '';
@@ -125,8 +143,7 @@ a:hover {
     font-weight: 400;
     font-size: 18px;
     line-height: 1.5;
-    margin-bottom: 18px;
-    margin-top: 0px;
+    margin-bottom: 58px;
     margin-left: -236px;
 }
 .banner-link {
@@ -148,13 +165,25 @@ a:hover {
     color: #FBF138;
     text-decoration: none;
 }
-.nav-arrow img {
-    background-image: url(../img/arrow.svg);
-    width: 52px;
-    height: 55px;
-    bottom: -205px;
+.nav-arrow {
+	width: 52px;
+    margin-top: 205px;
+    right: 236px;
     position: relative;
-    right: 238px;
+}
+
+.arrow {
+	width: 52px;
+	height: 55px;
+	background-image: url(../img/arrow.svg);
+	background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+	transition: 0.3s;
+}
+
+.arrow:hover {
+	transform: scale(1.1);
 }
 
 /* Заголовок Ближайшие события 1 */
@@ -411,13 +440,53 @@ a:hover {
     margin-bottom: 40px;
     line-height: 125%;
     padding-top: 10px;
-
 }
 .container1 {
     margin-bottom: 125px;
 }
-
-.timetable-grid {
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+}
+  
+.container-1 {
+    display: grid;
+    gap: 5px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr 1fr;
+}
+  
+.container-2 {
+    display: grid;
+    gap: 5px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 2fr;
+}
+  
+.container-3 {
+    display: grid;
+    gap: 5px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+  
+.item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid black;
+}
+/*
+.item-1, .item-4, .item-5 {
+    background-color: yellow;
+}
+  
+.item-2,.item-3, .item-6 {
+    background-color: green;
+}
+/* .timetable-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 250px 60px 90px 280px;
@@ -458,6 +527,7 @@ a:hover {
     grid-column: 3 / 4;
     grid-row: 3 / 5;
 }
+*/
 
 /* section email input */
 

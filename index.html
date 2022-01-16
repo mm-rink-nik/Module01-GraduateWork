@@ -17,18 +17,18 @@
         <div class="container">
             <div class="header">
                 <div class="header-item">
-                    <a href="#" class="header-logo"></a>
-                    <nav>
+                    <a href="index.html" class="header-logo"></a>
+                    <nav class="nav-item" >
                         <ul class="header-nav">
-                            <li><a href="#">Мероприятия</a></li>
-                            <li><a href="#">Расписание</a></li>
-                            <li><a href="#">О компании</a></li>
+                            <li><a href="#mainBody" class="trans">Мероприятия</a></li>
+                            <li><a href="#mainTraining" class="trans">Расписание</a></li>
+                            <li><a href="#aboutCompany" class="trans">О компании</a></li>
                         </ul>
                     </nav>
-                    <div class="social-item">
-                        <a href="#" class="header-inst"></a>
-                        <a href="#" class="header-fb"></a>  
-                    </div>
+                </div>
+                <div class="social-item">
+                    <a href="#" class="header-inst"></a>
+                    <a href="#" class="header-fb"></a>  
                 </div>    
             </div>
         </div>
@@ -45,17 +45,22 @@
                 </h2>
                 <p class="banner-res">в области спортивной<br>физиологии и нутрициологии</p>
                 <a href="#" class="banner-link">Узнать подробнее</a>
-                <span class="nav-arrow"> 
-                    <a href="#"> <img src="img/arrow.svg" alt="Arrow"></a>
-                </span>
+
+                <div class="nav-arrow">
+                    <a href="#mainTraining" class="trans">
+                        <div class="arrow"></div>
+                    </a>
+                </div>
             </div>
         </div>
     </div>
     <main>
         <div class="container1">
-            <h2 class="menu-title">
-                Ближайшие события
-            </h2>
+            <div class="main-body" id="mainBody">
+                <h2 class="menu-title">
+                    Ближайшие события
+                </h2>
+            </div>
             <section class="menu-greeds">
                 <!-- Марафон выносливости -->
                 <div class="menu-greed-item-maraphon">
@@ -103,27 +108,110 @@
         </div>
 
 
-        <!-- блок расписания тренировок Грид-иконок -->
+        <!-- Секция грид-иконок -->
 
-        <section class="training" id="training">
+        <section class="training" id="mainTraining">
             <div class="container2">
                 <div class="schedule-header">
                     <h2 class="schedule-title">Расписание <br> тренировок</h2>
                     <div class="schedule-date">22 - 28 июня</div>
                 </div>
-                <div class="timetable-grid">
-                    <div class="timetable-grid-itemLeft">
-                        <div class="timetable-grid-item">
-                           <p class="timetable-grid-date">22 июня, 10:00</p>
-                           <div class="timetable-grid-box">
-                              <img src="img/icons/body.svg" alt="Тренинг" class="timetable-grid-img">
-                              <h4 class="timetable-grid-title">Функциональный тренинг</h4>
-                              <p class="timetable-grid-text">
-                                 Подготовка тела перед физической нагрузкой.
-                              </p>
-                           </div>
+                        <!-- блок расписания тренировок Грид -->
+                    <div class="grid">
+                        <div class="container-1">
+                            <div class="item item-1">1
+                                <div class="timetable-grid-itemLeft">
+                                    <div class="timetable-grid-item">
+                                       <p class="timetable-grid-date">22 июня, 10:00</p>
+                                       <div class="timetable-grid-box">
+                                          <img src="img/icons/body.svg" alt="Тренинг" class="timetable-grid-img">
+                                          <h4 class="timetable-grid-title">Функциональный тренинг</h4>
+                                          <p class="timetable-grid-text">
+                                             Подготовка тела перед физической нагрузкой.
+                                          </p>
+                                       </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item item-2">2
+                                <div class="timetable-grid-itemLeft">
+                                    <div class="timetable-grid-item">
+                                       <p class="timetable-grid-date">22 июня, 10:00</p>
+                                       <div class="timetable-grid-box">
+                                          <img src="img/icons/jump.svg" alt="Скакалка" class="timetable-grid-img">
+                                          <h4 class="timetable-grid-title">Силовой микс</h4>
+                                          <p class="timetable-grid-text">
+                                            Упражнения помогут создать красивый рельеф и прийти в спортивную форму.
+                                          </p>
+                                       </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> 
+                        <div class="container-2">
+                            <div class="item item-3">3
+                                <div class="timetable-grid-itemLeft">
+                                    <div class="timetable-grid-item">
+                                       <p class="timetable-grid-date">22 июня, 10:00</p>
+                                       <div class="timetable-grid-box">
+                                          <img src="img/icons/bottle.svg" alt="Бутылка" class="timetable-grid-img">
+                                          <h4 class="timetable-grid-title">Body sculpt</h4>
+                                          <p class="timetable-grid-text">
+                                            Упражнения помогут создать красивый рельеф и прийти в спортивную форму.
+                                          </p>
+                                       </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item item-4">4
+                                <div class="timetable-grid-itemLeft">
+                                    <div class="timetable-grid-item">
+                                       <p class="timetable-grid-date">25 июня, 11:00</p>
+                                       <div class="timetable-grid-box">
+                                          <img src="img/icons/heart.svg" alt="Сердце" class="timetable-grid-img">
+                                          <h4 class="timetable-grid-title">Дыхательные практики</h4>
+                                          <p class="timetable-grid-text">
+                                            Упражнения помогут создать красивый рельеф и прийти в спортивную форму.
+                                          </p>
+                                       </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>  
+                            <div class="container-3">
+                            <div class="item item-5">5
+                                <div class="timetable-grid-itemLeft">
+                                    <div class="timetable-grid-item">
+                                       <p class="timetable-grid-date">22 июня, 10:00</p>
+                                       <div class="timetable-grid-box">
+                                          <img src="img/icons/dumbbell.svg" alt="Гантеля" class="timetable-grid-img">
+                                          <h4 class="timetable-grid-title">L.A.B.</h4>
+                                          <p class="timetable-grid-text">
+                                            Упражнения помогут создать красивый рельеф и прийти в спортивную форму.
+                                          </p>
+                                       </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item item-6">6
+                                <div class="timetable-grid-itemLeft">
+                                    <div class="timetable-grid-item">
+                                       <p class="timetable-grid-date">27 июня, 11:00</p>
+                                       <div class="timetable-grid-box">
+                                          <img src="img/icons/weight.svg" alt="Гиря" class="timetable-grid-img">
+                                          <h4 class="timetable-grid-title">Комплексная разминка</h4>
+                                          <p class="timetable-grid-text">
+                                            Упражнения помогут создать красивый рельеф и прийти в спортивную форму.
+                                          </p>
+                                       </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
+
+<!--
+                <div class="timetable-grid">
                     <div class="timetable-grid-itemLeft">
                         <div class="timetable-grid-item">
                            <p class="timetable-grid-date">22 июня, 10:00</p>
@@ -185,6 +273,8 @@
                         </div>
                     </div>
             </div>
+-->
+
             </div>
         </section>
 
@@ -247,12 +337,11 @@
         <div class="container-footer">
             <div class="footer-flex">
                 <div class="footer-nav">
-                    <div class="header-logo">
-                    </div>                
+                    <div class="header-logo"></div>                
                     <ul class="footer-nav-flex">
-                        <li><a class="footer-ankor" href="#menu">Мероприятия</a></li>
-                        <li><a class="footer-ankor" href="#training">Расписание</a></li>
-                        <li><a class="footer-ankor" href="#aboutCompany">О&nbsp;компании</a></li>
+                        <li><a class="footer-ankor" href="#mainBody" class="trans">Мероприятия</a></li>
+                        <li><a class="footer-ankor" href="#mainTraining" class="trans">Расписание</a></li>
+                        <li><a class="footer-ankor" href="#aboutCompany" class="trans">О&nbsp;компании</a></li>
                     </ul>
                 </div>
                 <div class="footer-contacts">
@@ -271,6 +360,19 @@
             </div>
         </div>        
     </footer>
-
+    <script>
+        // Smooth Scroll
+        const links = document.querySelectorAll(".trans");
+        for (const link of links) {
+        link.addEventListener("click", clickHandler);
+        }
+        function clickHandler(e) {
+        e.preventDefault();
+        const href = this.getAttribute("href");
+        document.querySelector(href).scrollIntoView({
+            behavior: "smooth"
+        });
+        }
+    </script>
 </body>
 </html>
